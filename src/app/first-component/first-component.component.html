@@ -1,0 +1,20 @@
+<h3>
+  first-component works!
+</h3>
+  <ul>
+      <li *ngFor="let comp of arrFirtsComponents; let i = index">{{comp.prop1}} - {{comp.prop2}} ({{i}})
+          <span *ngIf="comp.prop3"
+          [style.background]="comp.prop3 ? 'red' : 'transparent'"
+          [style.color]="comp.prop3 ? 'white' : 'transparent'"> {{comp.prop3}}!!</span>
+      </li>
+  </ul>
+<br/>
+  <p>Props1: </p>
+  <ul>
+      <li *ngFor="let prop of props1">{{prop}}</li>
+  </ul>
+    <prueba></prueba>
+<ul [ngSwitch]="color">
+    <li *ngSwitchCase="'black'"><span [ngStyle]="{'background':'black', 'color':'white'}">Negro</span></li>
+    <li *ngSwitchCase="'yellow'">Amarillo</li>
+</ul>
