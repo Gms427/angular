@@ -7,7 +7,7 @@ import { FirstComponent } from '../models/firstComponent';
   styleUrls: ['./first-component.component.css']
 })
 export class FirstComponentComponent implements OnInit {
-    public arrFirtsComponents = Array<FirstComponent>;
+    public arrFirtsComponents: Array<FirstComponent>;
     public props1: String[];
     public color: string;
 
@@ -33,6 +33,4 @@ export class FirstComponentComponent implements OnInit {
       });
       console.log(this.props1);
   }
-
-
 }

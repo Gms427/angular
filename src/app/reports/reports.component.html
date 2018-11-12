@@ -1,0 +1,13 @@
+<p>
+  reports works!
+</p>
+<div class="categories">
+
+      <ul *ngFor="let cat of categories">
+         <span>{{cat.name}}</span>
+         <li *ngFor="let rep of cat.reports">
+            {{rep}}
+         </li>
+      </ul>
+
+</div>

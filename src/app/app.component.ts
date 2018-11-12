@@ -9,6 +9,7 @@ import { Config } from './models/config';
 export class AppComponent {
   title = 'angular-app';
   public mostrar_prueba: boolean = true;
+  public config;
 
   constructor(){
     this.title = Config.title;
