@@ -4,7 +4,7 @@
 <div class="categories">
 
       <ul *ngFor="let cat of categories">
-         <span>{{cat.name}}</span>
+         <span class="catTitle">{{cat.name}}</span>
          <li *ngFor="let rep of cat.reports">
             {{rep}}
          </li>
